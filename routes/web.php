@@ -17,7 +17,7 @@ Route::get('/', function () {
 
     $name = 'Simone';
     $surname = 'Ferrini';
-    //qui c'è un errore, dice route(pagina1/2) non definito
+    
     $urls = [
         $urlOne = 'pagina1',
         $urlTwo = 'pagina2',

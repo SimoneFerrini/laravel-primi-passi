@@ -21,7 +21,7 @@
         <h2>Header: </h2>
         <ul>
             @foreach($urls as $url)
-            <li><a href="/{{$url}}">Vai alla {{$url}}</a></li>
+            <li><a href="{{route($url)}}">Vai alla {{$url}}</a></li>
             @endforeach
         </ul>
     </div>

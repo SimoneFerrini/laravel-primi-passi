@@ -20,8 +20,9 @@
     <div class="my-container">
         <h2>Header: </h2>
         <ul>
-            <li><a href="/pagina1">Visita pagina 1</a></li>
-            <li><a href="/pagina2">Visita pagina 2</a></li>
+            @foreach($urls as $url)
+            <li><a href="/{{$url}}">Vai alla {{$url}}</a></li>
+            @endforeach
         </ul>
     </div>
 </body>

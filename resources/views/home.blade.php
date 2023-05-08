@@ -8,5 +8,7 @@
 </head>
 <body>
     Hello World!!!
+    <br>
+    Welcome {{$name}} {{$surname}}.
 </body>
 </html>

@@ -14,10 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $name = 'Simone';
-    $surname = 'Ferrini';
+    $data = [
+        $name = 'Simone',
+        $surname = 'Ferrini',
 
-    return view('home',compact('name','surname'));
+        //qui c'è un errore, dice route(pagina1/2) non definito
+        $urls = [
+            $urlOne = route('pagina1'),
+            $urlTwo = route('pagina2'),
+        ],
+    ];
+
+    return view('home', $data);
 });
 
 Route::get('/pagina1', function () {
